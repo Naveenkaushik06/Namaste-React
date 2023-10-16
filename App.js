@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 
 //   React.createElement => object => HTML element render
 const Title = function () {
-  return <h1>Namaste React from JSX</h1>;
+  return <h1>Namaste React from JSX...</h1>;
 };
 
 const HeadingComponent = () => {
