@@ -10,7 +10,7 @@ const HeadingComponent = () => {
   return (
     <div>
     <Title />
-      <h1 className="header">Hello React from functional components</h1>
+      <h1 className="header">Hello from functional components</h1>
     </div>
   );
 };
