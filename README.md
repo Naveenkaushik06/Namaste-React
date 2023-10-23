@@ -1,10 +1,4 @@
-# Namaste React
-
-
- 
- useEffect(() => {
-    fetchData();
-  }, []);
+# React
 
   const fetchData = async () => {
     const data = await fetch(
@@ -18,11 +12,10 @@
     setListOfRestaurant(
       json.data.cards[2].card.card.gridElements.infoWithStyle.restaurants
     );
- 
+  }
  
  
 # today
-
 
 import React from "react";
 import ReactDOM from "react-dom/client";
