@@ -5,6 +5,7 @@
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
+    "deploy": "rm -rf dist/ && npm build && gh-pages -d dist",
     "test": "jest"
   },
   "repository": {
@@ -16,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/Naveenkaushik06/namaste-react/issues"
   },
-  "homepage": "https://github.com/Naveenkaushik06/namaste-react#readme",
+  "homepage": "https://github.com/Naveenkaushik06/namaste-react",
   "devDependencies": {
     "parcel": "^2.10.0",
     "postcss": "^8.4.31",
