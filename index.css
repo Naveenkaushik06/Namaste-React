@@ -1,3 +1,82 @@
-#heading{
-    color: rgb(233, 65, 18);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* .header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
 }
+.logo{
+    width: 150px;
+}
+.nav-items > ul{
+  display: flex;
+  list-style-type: none;
+  padding: 0px 10px;
+  font-size: 24px;
+  
+}
+.nav-items > ul > li {
+    margin: 10px;
+    padding: 10px;
+}
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+
+/* height is commenting --> not used ---->  height: 350px; */
+
+/* .res-card{
+    width: 295px;
+    
+    padding: 5px;
+    margin: 5px;
+} */
+
+
+/* .res-card:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+.search{
+    padding: 10px;
+}
+.res-logo{
+    width: 100%;
+}
+.filter-btn{
+    margin: 10px;
+    cursor: pointer;
+}
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.shimmer-card{
+    margin: 20px;
+    width: 270px;
+    height: 470px;
+    background-color: #f0f0f0;
+}
+.login{
+    width: 70px;
+    margin: 5px;
+    padding: 0px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.filter{
+    display: flex;
+}
+.search-btn{
+    cursor: pointer;
+}
+.user-card{
+    padding: 10px;
+    border: 1px solid black;
+} */
