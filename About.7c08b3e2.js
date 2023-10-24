@@ -1,0 +1,12 @@
+!function(){function e(e,n,t,r){Object.defineProperty(e,n,{get:t,set:r,enumerable:!0,configurable:!0})}var n=("undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:{}).parcelRequire164e,t=n.register;t("8fAyO",function(t,r){Object.defineProperty(t.exports,"__esModule",{value:!0,configurable:!0}),e(t.exports,"default",function(){return f});var o=n("bB0zn"),u=n("6QEWP"),a=n("5dLwP"),i=n("lMNAp"),c=n("cc6u1"),s=n("fIwXP"),l=n("36iKA"),f=/*#__PURE__*/function(e){(0,a._)(t,e);var n=(0,i._)(t);function t(e){return(0,o._)(this,t),n.call(this,e)}return(0,u._)(t,[{key:"componentDidMount",value:function(){// console.log("Parent ComponentDidMount");
+}},{key:"render",value:function(){// console.log("Parent Render");
+return/*#__PURE__*/(0,c.jsxs)("div",{children:[/*#__PURE__*/(0,c.jsx)("h1",{children:" About page"}),/*#__PURE__*/(0,c.jsx)(l.default,{name:"First",location:"Gurgaon (class)",contact:" naveenkaushik0612@gmail.com (class)"})]})}}]),t}(s.Component)}),t("36iKA",function(t,r){e(t.exports,"default",function(){return d});var o,u=n("7k5I8"),a=n("bB0zn"),i=n("6QEWP"),c=n("5dLwP"),s=n("lMNAp"),l=n("lFlDF"),f=n("cc6u1"),d=/*#__PURE__*/function(e){(0,c._)(t,e);var n=(0,s._)(t);function t(e){var r;return(0,a._)(this,t),(r=n.call(this,e)).state={userInfo:{name:"Dummy Name",location:"Dummy Location",avatar_url:"https//dummyurl.com"}},r}return(0,i._)(t,[{key:"componentDidMount",value:function(){var e=this;return(0,u._)(function(){var n;return(0,l.__generator)(this,function(t){switch(t.label){case 0:return[4,fetch("https://api.github.com/users/Naveenkaushik06")];case 1:return[4,t.sent().json()];case 2:return n=t.sent(),// console.log(json);
+// this.timer = setInterval(()=>{
+//   console.log("namaste react");
+// },1000);
+e.setState({userInfo:n}),[2]}})})()}},{key:"componentDidUpdate",value:function(){// console.log("ComponentdidUpdate");
+}},{key:"componentWillUnmount",value:function(){// console.log("componentWillUnmount");
+clearInterval(this.timer)}},{key:"render",value:function(){// console.log(this.props.name + "Child Render");
+var e=this.state.userInfo,n=e.name,t=e.location,r=e.avatar_url;return/*#__PURE__*/(0,f.jsxs)("div",{className:"user-card",children:[/*#__PURE__*/(0,f.jsxs)("h2",{children:["Name:",n]}),/*#__PURE__*/(0,f.jsxs)("h3",{children:["Location:",t]}),/*#__PURE__*/(0,f.jsx)("img",{src:r})]})}}]),t}(((o=n("fIwXP"))&&o.__esModule?o.default:o).Component)})}();//# sourceMappingURL=About.7c08b3e2.js.map
+
+//# sourceMappingURL=About.7c08b3e2.js.map
