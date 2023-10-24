@@ -5,7 +5,8 @@
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
-    "deploy": "rm -rf dist/ && npm build && gh-pages -d dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "test": "jest"
   },
   "repository": {
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/Naveenkaushik06/namaste-react",
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "parcel": "^2.10.0",
     "postcss": "^8.4.31",
     "process": "^0.11.10",
