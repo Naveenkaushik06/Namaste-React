@@ -14,20 +14,22 @@ const RestaurantMenu = () => {
 
   if (resInfo === null) return <Shimmer />;
 
-  const { name, cuisines, costForTwoMessage } = resInfo.cards[0].card.card.info;
+  const { name, cuisines, costForTwoMessage } =
+    resInfo?.cards[0]?.card?.card?.info;
 
-  const { itemCards } =
-    resInfo.cards[2].groupedCard.cardGroupMap.REGULAR.cards[5].card.card;
+  // const { itemCards } =
+  //   resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[5]?.card?.card;
   // console.log(itemCards);
 
-  // console.log(resInfo.cards[2].groupedCard.cardGroupMap.REGULAR.cards);
+  // console.log(resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards); //19
+
   const categories =
-    resInfo.cards[2].groupedCard.cardGroupMap.REGULAR.cards.filter(
+    resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.filter(
       (c) =>
         c?.card?.["card"]?.["@type"] ==
         "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
     );
-  // console.log(categories);
+  // console.log(categories);  //14
 
   return (
     <div className="text-center">
@@ -36,12 +38,12 @@ const RestaurantMenu = () => {
         {cuisines.join(", ")} - {costForTwoMessage}
       </p>
       {/* categories acordian */}
-      {categories.map((category,index) => (
+      {categories?.map((category, index) => (
         <RestaurentCategory
           key={category?.card?.card?.title}
           data={category?.card?.card}
           showItems={index === showIndex ? true : false}
-          setShowIndex={()=> setShowIndex(index)}
+          setShowIndex={() => setShowIndex(index)}
         />
       ))}
     </div>
