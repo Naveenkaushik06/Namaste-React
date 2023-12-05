@@ -1,7 +1,7 @@
 // import logo from "../../Image/logo.png";
 import { useContext, useState } from "react";
 import { LOGO_URL } from "../utils/constants";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
 import { useSelector } from "react-redux";
@@ -28,7 +28,7 @@ const Header = () => {
         <ul className="flex justify-center m-4 p-4 gap-2 font-light-bold text-lg">
           <li className="px-4">Online Status: {onlineStatus ? "✅" : "🔴"}</li>
           <li className="px-4 hover:text-orange-500">
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li className="px-4 hover:text-orange-500">
             <Link to="/about">About Us</Link>

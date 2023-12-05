@@ -17,7 +17,7 @@ const Cart = () => {
       <h1 className="font-bold text-2xl"></h1>
       <div className="w-6/12 m-auto">
         <button
-          className="m-2 p-2 rounded-md bg-green-600 text-white font-semibold hover:shadow-lg"
+          className="m-2 p-2 rounded-md bg-red-600 text-white font-semibold hover:shadow-lg"
           onClick={handleClearCart}
         >
           Clear Cart
