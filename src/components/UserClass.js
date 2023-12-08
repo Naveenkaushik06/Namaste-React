@@ -15,7 +15,7 @@ class UserClass extends React.Component {
   async componentDidMount() {
     // console.log(this.props.name + "Child ComponentDidMount");
     // API Call here
-    const data = await fetch("https://api.github.com/users/Naveenkaushik06");
+    const data = await fetch("https://corsproxy.io/?https://api.github.com/users/Naveenkaushik06");
     const json = await data.json();
     // console.log(json);
 
