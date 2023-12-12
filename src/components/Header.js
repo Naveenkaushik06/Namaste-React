@@ -22,10 +22,10 @@ const Header = () => {
     //responsive tailwind --->  sm:bg-yellow-50
     <div className="flex justify-between bg-pink-50 shadow-lg sticky top-0 overflow-hidden z-50">
       <div className="logo-container">
-        <img className="w-[130px]" src={LOGO_URL} alt="logo" />
+        <img className="w-32 mt-2" src={LOGO_URL} alt="logo" />
       </div>
       <div className="flex items-center">
-        <ul className="flex justify-center m-4 p-4 gap-2 font-light-bold text-lg">
+        <ul className=" flex justify-center m-4 p-4 gap-2 font-light-bold text-lg">
           <li className="px-4">Online Status: {onlineStatus ? "✅" : "🔴"}</li>
           <li className="px-4 hover:text-orange-500">
             <NavLink to="/">Home</NavLink>
